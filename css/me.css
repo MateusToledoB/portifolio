@@ -1,9 +1,4 @@
 #me {
     background-color: #121212;
-}
-h1{
-    padding: 100px 100px;
-    font-size: 35px;
-    color: #F2F2F2;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif; /* Define Nunito como a fonte padrão */
 }
