@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 120px 20px 120px; 
+        padding: 50px 120px 30px 120px; 
         height: 60px; /* Altura fixa menor */
         position: fixed;
         width: 100%;
