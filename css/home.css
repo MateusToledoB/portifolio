@@ -1,0 +1,113 @@
+#home {
+    background-color: #000000;
+    font-family: 'Raleway', sans-serif; /* Define Nunito como a fonte padrão */
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 50px 50px 50px; /* Ajusta para 80px para ser mais preciso */
+        height: 60px; /* Altura fixa menor */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        z-index: 1000;
+    }
+    
+    
+    
+    h1 {
+        margin: 0;
+        font-size: 35px; /* Tamanho menor para o título */
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #F2F2F2;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    nav a:hover {
+        text-decoration: none;
+        color: #1984A5;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+
+
+    .content {
+        display: flex;
+        height: calc(100vh - 80px); /* Ocupa a altura total do container, subtraindo a altura do cabeçalho */
+    }
+
+    .left {
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 350px 50px 50px 150px; /* Ajuste o padding-left para 80px, igual ao do header */
+    }
+
+    .left p {
+        color: #F2F2F2;
+        font-size: 35px;
+        text-align: left;
+    }
+.welcome{
+    font-size: 35px;
+    color: #F2F2F2;
+    font-weight: bold;
+}
+.nome{
+    font-size: 35px;
+    color:#1984A5;
+    font-weight: bold;
+}
+.automation{
+    font-size: 35px;
+    color:#1984A5;
+    font-weight: bold;
+}
+
+.left .buttons { 
+    display: flex; /* Para alinhar os botões horizontalmente */
+    justify-content: left; /* Alinha os botões no centro */
+    margin-top: 120px; /* Espaço acima dos botões */
+}
+
+
+.left button {
+    background-color: #F2F2F2; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto */
+    border: none; /* Remove bordas */
+    border-radius: 500px; /* Bordas retas */
+    width: 150px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 15px; /* Tamanho da fonte */
+    margin: 0 20px; /* Espaçamento lateral entre os botões */
+    font-weight: bold;
+}
+
+
+.left button:hover {
+    background-color: #121212; /* Cor de fundo do botão */
+    color: #1984A5; /* Cor do texto */
+    border: none; /* Remove bordas */
+    border-radius: 500px; /* Bordas retas */
+    width: 150px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 15px; /* Tamanho da fonte */
+    margin: 0 20px; /* Espaçamento lateral entre os botões */
+    font-weight: bold;
+}
+
+
+.right {
+    flex: 0 0 40%; /* O lado direito ocupa 40% da largura */
+
+}
+}
