@@ -1,3 +1,137 @@
 #work {
     background-color: #000000;
+    font-family: 'Raleway', sans-serif; /* Define Nunito como a fonte padrão */
+
 }
+#work h1{
+    color: #F2F2F2;
+    font-size:35px;
+    padding: 40px 120px 20px 120px; 
+    text-align: center;
+}
+.work-container {
+    position: relative; /* Permite que os elementos dentro dele sejam posicionados em relação a ele */
+    display: flex;
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    align-items: flex-start; /* Alinha os cards no topo */
+    text-align: center;
+    z-index: 3; /* Garante que os cards fiquem acima da imagem */
+}
+
+.work-image {
+    position: absolute; /* Fora do fluxo normal, vai ficar sobreposto sem afetar layout */
+    left: 120px; /* Move a imagem para a esquerda da tela */
+    top: 100px; /* Move a imagem para baixo */
+    width: 500px; /* Define a largura da imagem */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    border: 5px solid #1984A5; /* Adiciona uma borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra suave */
+    z-index: 0; /* Coloca a imagem atrás dos cards */
+}
+
+.work-container {
+    position: relative; /* Permite que os elementos dentro dele sejam posicionados em relação a ele */
+    display: flex;
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    align-items: flex-start; /* Alinha os cards no topo */
+    text-align: center;
+    z-index: 1; /* Impede que os cards fiquem atrás da imagem */
+}
+
+.work-image {
+    position: absolute; /* A imagem será posicionada fora do fluxo normal */
+    left: 120px; /* Move a imagem para a esquerda */
+    top: 100px; /* Move a imagem para baixo */
+    width: 500px; /* Largura da imagem */
+    height: auto; /* Altura proporcional */
+    border: 5px solid #1984A5; /* Bordas */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra suave */
+    z-index: 0; /* Coloca a imagem atrás dos cards */
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center; /* Centraliza os cards no container */
+    gap: 40px; /* Reduz o espaçamento entre os itens */
+    flex-wrap: wrap; /* Ajusta os cards em telas menores */
+    position: relative; /* Permite que os cards se sobreponham à imagem */
+    z-index: 2; /* Garante que os cards fiquem à frente da imagem */
+}
+
+.card {
+    background-color: #121212;
+    border: 2px solid #F2F2F2;
+    padding: 20px;
+    width: 320px; /* Largura fixa */
+    height: 100px; /* Altura inicial */
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Esconde o conteúdo excedente */
+    transition: all 1.0s ease; /* Transição suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que o título fique no topo */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Garante controle do layout */
+    z-index: 3; /* Garante que os cards fiquem acima da imagem */
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1984A5;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card p {
+    font-size: 14px;
+    color: #F2F2F2;
+    opacity: 0;
+    transition: opacity 1.0s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    height: 400px; /* Expande para acomodar o conteúdo completo */
+    z-index: 4; /* Garante que o card fique acima de tudo durante o hover */
+    border: 2px solid #1984A5;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+.card:hover p {
+    opacity: 1; /* Texto aparece ao passar o mouse */
+}
+
+.card:hover h2 {
+    opacity: 1; /* Garante que o título sempre apareça */
+}
+.work-text{
+
+    right: 150px; /* Move a imagem para a esquerda */
+    top: 100px; /* Move a imagem para baixo */
+    width: 500px; /* Largura da imagem */
+    height: auto; /* Altura proporcional */
+    border: 5px solid #1984A5; /* Bordas */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra suave */
+    z-index: 0; /* Coloca a imagem atrás dos cards */
+    color: #F2F2F2;
+}
+
+
+
+

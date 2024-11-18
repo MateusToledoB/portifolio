@@ -20,10 +20,10 @@
         <header>
             <h1>Mateus Toledo Benkenstein</h1>
             <nav>
-                <a href="#home" id="home">Home</a>
-                <a href="#me" id="me">Sobre mim</a>
-                <a href="#work" id="work">Trabalho</a>
-                <a href="#contact" id="contact">Contato</a>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#me" class="nav-link">Sobre mim</a>
+                <a href="#work" class="nav-link">Trabalho</a>
+                <a href="#contact" class="nav-link">Contato</a>
             </nav>
         </header>
         <div class="content">
@@ -49,10 +49,38 @@
     </div>
     <div id="me" class="section">
         <h1>Sobre Mim</h1>
+        <p>Sou um desenvolvedor apaixonado por tecnologia e automação!<br> Entrei no mundo da programação no início de 2024 e desde então venho
+            mergulhando fundo em novas soluções. Hoje, trabalho como desenvolvedor RPA com Python, onde ajudo a automatizar processos e trazer eficiência para diferentes áreas.<br>
+            Estou sempre em busca de aprender mais: atualmente, me aprofundando no desenvolvimento com Django e estudando Kotlin, que uso para desenvolvimento mobile. Além disso, estou me aventurando no front-end com JavaScript, HTML e CSS; inclusive, criei<br>
+            este site para explorar minhas habilidades na área! Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS) e sempre pronto para inovar em cada projeto.</p>
     </div>
-    <div id="work" class="section"></div>
+    <div id="work" class="section">
+        <h1>Veja um dos cases de sucesso!</h1>
+        
+        <div class="grid-container">
+            <div class="card">
+                <h2>Objetivo</h2>
+                <p class="hidden-text">Automatizar o processo de download e organização de documentos provenientes de diferentes ambientes, garantindo que sejam disponibilizados de forma eficiente e personalizada para cada cliente. O projeto visa reduzir o esforço manual, minimizar erros e atender às necessidades de três diretorias, proporcionando agilidade e confiabilidade na gestão de até 37 mil documentos mensais.</p>
+            </div>
+            <div class="card">
+                <h2>Fluxo</h2>
+                <p class="hidden-text">O fluxo do projeto é baseado na integração com a API do Smartsheet, que centraliza os dados necessários para a execução das automações. Cada tipo de documento, como comprovantes de VA, VT, pagamento, holerites, folha de ponto e locação, possui um script de automação dedicado, que consulta as informações dos colaboradores no Smartsheet. Além disso, os scripts atualizam o status de cada documento, informando quais foram disponibilizados, quais ainda não estão disponíveis e serão checados novamente no próximo ciclo, e quais estão pendentes. Essa integração permite identificar as solicitações de cada cliente e organizar os downloads de forma eficiente e centralizada, garantindo agilidade e precisão nos processos</p>
+            </div>
+            <div class="card">
+                <h2>Resultados</h2>
+                <p class="hidden-text">O projeto trouxe resultados significativos na melhoria dos processos internos, especialmente na entrega de documentos aos clientes. Agora, o processo de entrega está mais ágil e eficaz, permitindo que o setor economize um tempo considerável. Com a automação da tarefa, a equipe pode dedicar mais horas ao que realmente importa: realizar análises mais minuciosas e precisas. Essa otimização não só trouxe maior assertividade nas entregas, mas também resultou em uma economia substancial de horas ao longo do mês, impactando positivamente na produtividade e na qualidade do trabalho.</p>
+            </div>
+        </div>
+        <div class="work-container"> <!-- Container para centralizar a imagem -->
+            <img src="assets/dash.png" alt="Descrição da imagem" class="work-image">
+        </div>
+        <div class="work-text">
+            <p>Aqui vai o texto que explica o projeto ou qualquer outro conteúdo relacionado. Pode ser um breve resumo, informações adicionais, etc.</p>
+        </div>
+    </div>
+    
     <div id="contact" class="section"></div>
-    <script src="js/script.js"></script>
+
 </body>
 </html>
 
