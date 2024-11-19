@@ -1,6 +1,7 @@
 #work {
     background-color: #000000;
     font-family: 'Raleway', sans-serif; /* Define Nunito como a fonte padrão */
+    position: relative;
 
 }
 #work h1{
@@ -9,55 +10,14 @@
     padding: 40px 120px 20px 120px; 
     text-align: center;
 }
-.work-container {
-    position: relative; /* Permite que os elementos dentro dele sejam posicionados em relação a ele */
-    display: flex;
-    justify-content: flex-start; /* Alinha os cards à esquerda */
-    align-items: flex-start; /* Alinha os cards no topo */
-    text-align: center;
-    z-index: 3; /* Garante que os cards fiquem acima da imagem */
-}
-
-.work-image {
-    position: absolute; /* Fora do fluxo normal, vai ficar sobreposto sem afetar layout */
-    left: 120px; /* Move a imagem para a esquerda da tela */
-    top: 100px; /* Move a imagem para baixo */
-    width: 500px; /* Define a largura da imagem */
-    height: auto; /* Ajusta a altura proporcionalmente */
-    border: 5px solid #1984A5; /* Adiciona uma borda */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra suave */
-    z-index: 0; /* Coloca a imagem atrás dos cards */
-}
-
-.work-container {
-    position: relative; /* Permite que os elementos dentro dele sejam posicionados em relação a ele */
-    display: flex;
-    justify-content: flex-start; /* Alinha os cards à esquerda */
-    align-items: flex-start; /* Alinha os cards no topo */
-    text-align: center;
-    z-index: 1; /* Impede que os cards fiquem atrás da imagem */
-}
-
-.work-image {
-    position: absolute; /* A imagem será posicionada fora do fluxo normal */
-    left: 120px; /* Move a imagem para a esquerda */
-    top: 100px; /* Move a imagem para baixo */
-    width: 500px; /* Largura da imagem */
-    height: auto; /* Altura proporcional */
-    border: 5px solid #1984A5; /* Bordas */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra suave */
-    z-index: 0; /* Coloca a imagem atrás dos cards */
-}
-
 .grid-container {
     display: flex;
     justify-content: center; /* Centraliza os cards no container */
     gap: 40px; /* Reduz o espaçamento entre os itens */
     flex-wrap: wrap; /* Ajusta os cards em telas menores */
     position: relative; /* Permite que os cards se sobreponham à imagem */
-    z-index: 2; /* Garante que os cards fiquem à frente da imagem */
+    z-index: 20; /* Garante que os cards fiquem à frente da imagem */
+    height: 150px; /* Ajusta a altura do container */
 }
 
 .card {
@@ -65,7 +25,7 @@
     border: 2px solid #F2F2F2;
     padding: 20px;
     width: 320px; /* Largura fixa */
-    height: 100px; /* Altura inicial */
+    height: 80px; /* Altura inicial */
     box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,7 +37,7 @@
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     text-align: center; /* Centraliza o texto */
     position: relative; /* Garante controle do layout */
-    z-index: 3; /* Garante que os cards fiquem acima da imagem */
+    z-index: 20; /* Garante que os cards fiquem acima da imagem */
 }
 
 .card h2 {
@@ -107,9 +67,9 @@
 
 .card:hover {
     height: 400px; /* Expande para acomodar o conteúdo completo */
-    z-index: 4; /* Garante que o card fique acima de tudo durante o hover */
+    z-index: 20; /* Garante que o card fique acima de tudo durante o hover */
     border: 2px solid #1984A5;
-    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    box-shadow: 0 10px 18px #1984A5;
 }
 
 .card:hover p {
@@ -119,19 +79,77 @@
 .card:hover h2 {
     opacity: 1; /* Garante que o título sempre apareça */
 }
-.work-text{
 
-    right: 150px; /* Move a imagem para a esquerda */
-    top: 100px; /* Move a imagem para baixo */
-    width: 500px; /* Largura da imagem */
-    height: auto; /* Altura proporcional */
-    border: 5px solid #1984A5; /* Bordas */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra suave */
-    z-index: 0; /* Coloca a imagem atrás dos cards */
-    color: #F2F2F2;
+.text-container {
+   border-radius: 8px;
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+    background-color: #121212; /* Cor de fundo, para destacar o conteúdo */
+    color: #F2F2F2; /* Cor do texto */
+    position: absolute; /* Permite posicionar a div em relação à tela */
+    left: 50px; /* Espaço de 120px da borda esquerda */
+    top: 220px; /* Ajuste opcional para a posição vertical */
+    width: 420px; /* Largura fixa */
+    height: 390px; /* Altura fixa */
+    z-index: 0; /* Garante que a div não seja sobreposta por outros elementos */
 }
 
+/* Ajustes de posição conforme a sessão */
+.text-container:nth-of-type(1) {
+    margin-top: 80px; /* Ajuste de posição para o primeiro item */
+}
 
+.text-container:nth-of-type(2) {
+    margin-top: 50px; /* Ajuste para o segundo item, por exemplo */
+}
+
+/* Para responsividade (ajustar em telas menores) */
+@media (max-width: 768px) {
+    .text-container {
+        margin-top: 500px; /* Menos margem em telas menores */
+        padding: 15px; /* Menos padding em telas menores */
+        width: 100%; /* Largura 100% para telas menores */
+        height: auto; /* Altura automática para conteúdo variável */
+        left: 0; /* Para garantir que a div ocupe toda a largura da tela em telas pequenas */
+    }
+}
+.image-container {
+
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+
+    position: absolute; /* Permite posicionar a div em relação à tela */
+    right: 50px; /* Espaço de 120px da borda direita */
+    top: 170px; /* Ajuste opcional para a posição vertical */
+    width: auto; /* Largura automática da div */
+    height: auto; /* Altura automática da div */
+    z-index: 0; /* Garante que a div não seja sobreposta por outros elementos */
+}
+
+.image-container img {
+    width: 700px;  /* Largura fixa de 650px para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+}
+
+/* Ajustes de posição conforme a sessão */
+.image-container:nth-of-type(1) {
+    margin-top: 80px; /* Ajuste de posição para o primeiro item */
+}
+
+.image-container:nth-of-type(2) {
+    margin-top: 50px; /* Ajuste para o segundo item, por exemplo */
+}
+
+/* Para responsividade (ajustar em telas menores) */
+@media (max-width: 768px) {
+    .image-container {
+        margin-top: 500px; /* Menos margem em telas menores */
+        padding: 15px; /* Menos padding em telas menores */
+        width: 100%; /* Largura 100% para telas menores */
+        height: auto; /* Altura automática para conteúdo variável */
+        right: 0; /* Para garantir que a div ocupe toda a largura da tela em telas pequenas */
+    }
+}
 
 
