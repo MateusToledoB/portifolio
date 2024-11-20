@@ -87,13 +87,19 @@
     background-color: #121212; /* Cor de fundo, para destacar o conteúdo */
     color: #F2F2F2; /* Cor do texto */
     position: absolute; /* Permite posicionar a div em relação à tela */
-    left: 50px; /* Espaço de 120px da borda esquerda */
-    top: 220px; /* Ajuste opcional para a posição vertical */
-    width: 420px; /* Largura fixa */
+    left: 50%; /* Espaço de 120px da borda esquerda */
+    transform: translate(-50%, -50%); /* Centraliza exatamente ao meio */
+    top: 380px; /* Ajuste opcional para a posição vertical */
+    width: 700px; /* Largura fixa */
     height: 390px; /* Altura fixa */
     z-index: 0; /* Garante que a div não seja sobreposta por outros elementos */
 }
-
+.text-container p{
+    font-size: 20px;
+}
+.text-container h2{
+    text-align: center; 
+}
 /* Ajustes de posição conforme a sessão */
 .text-container:nth-of-type(1) {
     margin-top: 80px; /* Ajuste de posição para o primeiro item */
@@ -111,44 +117,6 @@
         width: 100%; /* Largura 100% para telas menores */
         height: auto; /* Altura automática para conteúdo variável */
         left: 0; /* Para garantir que a div ocupe toda a largura da tela em telas pequenas */
-    }
-}
-.image-container {
-
-    padding: 20px; /* Espaçamento interno */
-    margin: 20px; /* Espaçamento externo */
-
-    position: absolute; /* Permite posicionar a div em relação à tela */
-    right: 50px; /* Espaço de 120px da borda direita */
-    top: 170px; /* Ajuste opcional para a posição vertical */
-    width: auto; /* Largura automática da div */
-    height: auto; /* Altura automática da div */
-    z-index: 0; /* Garante que a div não seja sobreposta por outros elementos */
-}
-
-.image-container img {
-    width: 700px;  /* Largura fixa de 650px para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px;
-}
-
-/* Ajustes de posição conforme a sessão */
-.image-container:nth-of-type(1) {
-    margin-top: 80px; /* Ajuste de posição para o primeiro item */
-}
-
-.image-container:nth-of-type(2) {
-    margin-top: 50px; /* Ajuste para o segundo item, por exemplo */
-}
-
-/* Para responsividade (ajustar em telas menores) */
-@media (max-width: 768px) {
-    .image-container {
-        margin-top: 500px; /* Menos margem em telas menores */
-        padding: 15px; /* Menos padding em telas menores */
-        width: 100%; /* Largura 100% para telas menores */
-        height: auto; /* Altura automática para conteúdo variável */
-        right: 0; /* Para garantir que a div ocupe toda a largura da tela em telas pequenas */
     }
 }
 

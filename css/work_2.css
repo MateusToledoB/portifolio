@@ -1,0 +1,50 @@
+#work_2 {
+    background-color: #121212;
+    font-family: 'Raleway', sans-serif; /* Define Nunito como a fonte padrão */
+    font-family: 'Raleway', sans-serif; /* Define Nunito como a fonte padrão */
+    min-height: auto; /* Altura mínima baseada no conteúdo */
+    height: auto; /* Altura automática baseada no conteúdo */
+}
+.gallery-container {
+    position: relative;
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    color: aliceblue;
+}
+
+.gallery-container img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura da div pai */
+    max-width: 1000px; /* Ajusta a largura máxima para evitar que a imagem fique excessivamente grande */
+    height: auto; /* Mantém a proporção da altura */
+    object-fit: cover; /* Garante que a imagem cubra o espaço da div sem distorção */
+    border-radius: 10px;
+}
+
+
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.gallery-btn.prev {
+    left: 10px;
+}
+
+.gallery-btn.next {
+    right: 10px;
+}
+
+.gallery-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

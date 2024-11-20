@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/me.css">
     <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/work_2.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -71,20 +72,30 @@
                 <p class="hidden-text">O projeto trouxe resultados significativos na melhoria dos processos internos, especialmente na entrega de documentos aos clientes. Agora, o processo de entrega está mais ágil e eficaz, permitindo que o setor economize um tempo considerável. Com a automação da tarefa, a equipe pode dedicar mais horas ao que realmente importa: realizar análises mais minuciosas e precisas. Essa otimização não só trouxe maior assertividade nas entregas, mas também resultou em uma economia substancial de horas ao longo do mês, impactando positivamente na produtividade e na qualidade do trabalho.</p>
             </div>
         </div>
-        <div class="image-container">
-            <img src="assets/dash.png" alt="Imagem do caso de sucesso">
-        </div>    
+    
         
         <div class="text-container">
             <h2>Mais sobre o projeto</h2><br>
-            <p> A imagem mostra um print do segundo mês de teste dos scripts, evidenciando o mapeamento das entregas automatizadas. O gráfico revela que a média geral de entrega foi inferior a 6 dias, utilizando um computador com 6 GB de RAM. Esse desempenho é excelente, especialmente quando comparado ao processo anterior, que demandava o esforço de um setor inteiro e levava cerca de um mês para disponibilizar todos os arquivos. O mapeamento destaca a otimização significativa no tempo de entrega, refletindo a eficiência da automação e seu impacto positivo, tornando o processo muito mais ágil e preciso.</p>
-            
+            <p> Os resultados do segundo mês de testes dos scripts mostram uma redução significativa no tempo de entrega, com uma média inferior a 6 dias, utilizando um computador com 6 GB de RAM. Esse desempenho contrasta com o processo anterior, que demandava o esforço de um setor inteiro e levava cerca de um mês para disponibilizar todos os arquivos. O mapeamento destaca a otimização significativa no tempo de entrega, refletindo a eficiência da automação e seu impacto positivo, tornando o processo muito mais ágil e preciso.</p>  
         </div>
 
     </div>
-    
+    <div id="work_2" class="section">
+        <div class="gallery-container">
+            <button class="gallery-btn prev" onclick="changeImage(-1)">&#10094;</button>
+            
+            <div class="image-container">
+                <img id="gallery-image" src="assets/dash.png" alt="Galeria" />
+                <div class="image-text">Este print mostra a análise do segundo mês de testes do projeto, com uma taxa de conclusão de 76%, levando em conta os documentos que não estavam disponiveis para serem entregues.  </div> <!-- Texto da imagem -->
+            </div>
+            
+            <button class="gallery-btn next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        
+        
+    </div>
     <div id="contact" class="section"></div>
-
+    <script src="script.js"></script>
 </body>
 </html>
 
