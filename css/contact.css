@@ -1,3 +1,29 @@
 #contact {
     background-color: #000000;
+    position: relative;
+    display: flex;           /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh; 
+    max-height: 400px;
+              /* Altura da seção */
 }
+
+.imagem-contatos {
+    display: flex;
+    gap: 80px;               /* Espaçamento entre os ícones */
+}
+
+.imagem-contatos img {
+    width: 50px;             /* Define o tamanho das imagens */
+    height: auto;
+    cursor: pointer;         /* Mostra o ponteiro ao passar o mouse */
+    transition: transform 0.2s ease;
+    /* Adiciona uma transição suave */
+}
+
+.imagem-contatos img:hover {
+    transform: scale(1.5); /* Aumenta o tamanho da imagem */
+    filter: brightness(1.2) drop-shadow(0 0 10px #1984A5) drop-shadow(0 0 15px #1984A5) drop-shadow(0 0 20px #1984A5);
+}
+
